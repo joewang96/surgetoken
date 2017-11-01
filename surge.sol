@@ -23,9 +23,9 @@ contract SurgeToken {
      * Initializes contract with initial supply tokens to the creator of the contract
      */
     function SurgeToken() public {
-        initialSupply = 1000;                                   // Update total supply (10,000)
+        initialSupply = 1000;                                   // Update total supply (1,000)
         totalSupply = initialSupply * 10 ** uint256(decimals);  // Update total supply with the decimal amount
-        balanceOf[msg.sender] = totalSupply;                    // Give the creator all initial tokens (10,000)
+        balanceOf[msg.sender] = totalSupply;                    // Give the creator all initial tokens (1,000)
         name = "Surge Token";                                   // Set the name for display purposes
         symbol = "SURGE";                                       // Set the symbol for display purposes
     }
